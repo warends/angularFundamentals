@@ -1,0 +1,46 @@
+
+      <div class="container">
+        <div class="row col-xs-6">
+
+
+        <h2>New Event</h2>
+        <hr />
+        <form name="newEventForm">
+
+          <div class="form-group">
+            <label for="eventName">Event Name</label>
+            <input id="eventName" ng-model="event.name" type="text" required class="form-control" placeholder="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="eventDate">Event Date</label>
+            <input id="eventDate" ng-model="event.date" type="text" required ng-pattern="/\d\d/\d\d/\d\d\d\d/" class="form-control" placeholder="Format (MM/DD/YYYY)" />
+          </div>
+
+          <div class="form-group">
+            <label for="eventTime">Event Time</label>
+            <input id="eventTime" ng-model="event.time" type="text" class="form-control" placeholder="Time" />
+          </div>
+
+          <div class="form-group">
+            <label for="eventLocation">Event Location</label>
+            <input id="eventLocation" ng-model="event.location" type="text" class="form-control" placeholder="Location" />
+          </div>
+
+          <div class="form-group">
+            <label for="eventImageUrl">Event Image</label>
+            <input id="eventImageUrl" ng-model="event.imageUrl" type="url" class="input-xlarge form-control" placeholder="url of image" />
+
+          </div>
+
+
+          <img ng-src="{{event.imageUrl}}" src="" />
+
+          <button type="submit" ng-click="saveEvent(event, newEventForm)" ng-disabled="newEventForm.$invalid" class="btn btn-primary">Save</button>
+          <button type="button" ng-click="cancelEvent()" class="btn btn-default">Cancel</button>
+
+        </form>
+      </div>
+
+
+        </div>

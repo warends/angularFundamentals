@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Events</h1>
+    <ul class="thumbnails">
+      <li ng-repeat="event in events | orderBy: sortorder" class="col-xs-5">
+        <event-thumbnail event="event"></event-thumbnail>
+      </li>
+    </ul>
+</div>

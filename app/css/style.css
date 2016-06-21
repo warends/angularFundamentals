@@ -5,3 +5,13 @@
 input.ng-invalid.ng-dirty {
   background-color: pink;
 }
+li {
+  list-style: none;
+}
+.well {
+  height: 250px;
+}
+.well:hover{
+  background-color: #222;
+  color: #fff;
+}
