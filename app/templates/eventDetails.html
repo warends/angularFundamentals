@@ -15,11 +15,12 @@
           <up-vote voteup="voteUpSession(session)" votedown="voteDownSession(session)" count="session.upVoteCount"></up-vote>
 
           <div class="well col-xs-6">
-              <h4 class="well-title">{{session.name}}</h4>
-              <h6>{{session.creatorName}}</h6>
-              <span>{{session.duration}}</span>
-              <span>Level: {{session.level}}</span>
-              <p>{{session.abstract}}</p>
+              <collapsible title="{{session.name}}">
+                  <h6>{{session.creatorName}}</h6>
+                  <span>{{session.duration}}</span>
+                  <span>Level: {{session.level}}</span>
+                  <p>{{session.abstract}}</p>
+            </collapsible>
           </div>
         </div>
       </li>

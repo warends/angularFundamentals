@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('eventsApp').controller('editEventCtrl', function($scope, eventData){
+angular.module('eventsApp').controller('newEventCtrl', function($scope, eventData){
 
   $scope.saveEvent = function(event, newEventForm) {
       if(newEventForm.$valid){
@@ -8,7 +8,7 @@ angular.module('eventsApp').controller('editEventCtrl', function($scope, eventDa
             .$promise
             .then(function(response){console.log('success', response)})
             .catch(function(response){console.log('failed', response)});
-          
+
       }
   };
 

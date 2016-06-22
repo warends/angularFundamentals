@@ -6,7 +6,7 @@ angular.module('eventsApp', ['ngResource', 'ngCookies', 'ngRoute'])
     $routeProvider
       .when('/newEvent', {
         templateUrl: '/templates/newEvent.html',
-        controller: 'editEventCtrl'
+        controller: 'newEventCtrl'
       })
       .when('/editProfile', {
         templateUrl: '/templates/editProfile.html',
